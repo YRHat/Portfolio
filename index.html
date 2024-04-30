@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="stylesheet" href="src/index.css">
+<title>Yashodip Randive | @Yashodip Portfolio</title>
+</head>
+body>
+
+<header class="header">
+<a href="#home" class="logo">Itz Yashodip <span style="color: #59B2F4;">Portfolio</span></a>
+
+<i class="fa-solid fa-bars" id="menu-icon"></i>
+
+<nav class="navbar">
+<a href="#home" class="active">Home</a>
+<a href="#about">About</a>
+<a href="#services">Skills</a>
+<a href="#Portfolio">Portfolio</a>
+<a href="#Achievements">Achievements</a>
+
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="home" id="home">
+    <div class="home-content">
+    <h3>Hi, Myself</h3>
+    <h1>Yashodip Randive</h1>
+    <h3>And I'm a <span class="multiple-text"> Software Developer </span></h3>
+    <p>As a B.tech CSE student, I believe technology is an important pillar for human advancement.
+        
+    </p>
+    <div class="social-media">
+    <a href="https://www.facebook.com/profile.php?id=61559006074999&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+   <a href="https://github.com/YRHat/Tcpdumptool.git"><i class="fa-brands fa-github"></i></a>
+    <a href="https://www.instagram.com/yashodip_755?igsh=MWg5dHcyZWNvYWp5cg=="><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/in/yashodip0755"><i class="fa-brands fa-linkedin-in"></i></a>
+    </div>
+    <a href="src/assets/yashodipresume.pdf" class="btn">Download CV</a>
+    </div>
+    
+    <div class="home-img">
+    <img src="src/assets/logotry2.png" alt="">
+    </div>
+</section>
+
+<div id="about">
+    <div class="container">
+    <div class="row">
+    <div class="about-col-1">
+    <img src="src/assets/yashologo.png">
+    </div>
+    <div class="about-col-2">
+    <h1 class="sub-title">About <span style="color: #59B2F4;">Me</span></h1>
+    <p style="font-size: 20px;">
+     Motivated and dedicated individual passionate about software development and cybersecurity.
+    </p>
+    <div class="tab-titles">
+        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+        <p class="tab-links" onclick="opentab('Education')">Education</p>
+        </div>
+
+        <div class="tab-contents active-tab" id="Skills">
+<ul>
+<li><span>Cybersecurity</span><br>Securing all digital assests against hacker</li>
+<li><span>Web Development</span><br>Web app Development</li>
+<li><span>App Development</span><br>Building Android/iOS apps</li>
+</ul>
+</div>
+
+<div class="tab-contents" id="Experience">
+    <ul>
+    <li><span>Cloud Computing</span><br>Launching instances, S3 buckets and it's configuration</li>
+    <li><span>Ethical Hacking</span><br>Using SIEM Tools</li>
+    <li><span>Interships</span><br>Currently no interships</li>
+    </ul>
+    </div>
+
+    <div class="tab-contents" id="Education">
+        <ul>
+        <li><span>2022-2026 (Currently)</span><br>B.Tech-CSE[S.Y.]: Sanjay Ghodawat University, Kolhapur</li>
+        <li><span>2020-2022</span><br>11th-12th: Mudhoji Highschool and Jr.college, Satara </li>
+        <li><span>2020</span><br>class 10th: Brilliant Academy English Medium School, Satara</li>
+        </ul>
+        </div>
+
+    </div>
+    </div>
+    </div>
+    <div>
+
+
+ <script>
+    
+    var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname) {
+for(tablink of tablinks) {
+tablink.classList.remove("active-link");
+}
+
+for(tabcontent of tabcontents) {
+tabcontent.classList.remove("active-tab");
+}
+
+event. currentTarget.classList.add("active-link");
+document.getElementById(tabname).classList.add("active-tab");
+}
+
+ </script>
+
+    <section class="services" id="services">
+        <h2 class="headinng">My <span>Skills</span></h2>
+    
+        <div class="services-container">
+            <!-- First Row of Service Boxes -->
+            <div class="services-row">
+                <div class="services-box">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Python Programming</h3>
+                    <p>It is High-Level, general purpose programming language. Good understanding of OOP concepts.</p>
+                  <a href="#" class="btn">80%</a>
+                </div>
+    
+                <div class="services-box">
+                    <i class="fa fa-diamond" aria-hidden="true"></i>
+                    <h3>DSA</h3>
+                    <p>Data Structure and Algorithms[DSA] is a fundamental part of computer science. Understanding to solve complex problems systematically.</p>
+                    <a href="#" class="btn">80%</a>
+                </div>
+    
+                <div class="services-box">
+                    <i class="fa fa-terminal"></i>
+                    <h3>Linux</h3>
+                    <p>It is open-source operating system.Good understanding of CLI of terminal. Good understanding with respect to security field.</p>
+                    <a href="#" class="btn">85%</a>
+                </div>
+            </div>
+
+    
+
+            
+            <!-- Second Row of Service Boxes -->
+            <div class="services-row">
+                <!-- Add your next 3 service boxes here -->
+                <div class="services-row">
+                    <div class="services-box">
+                        <i class="fa-solid fa-code"></i>
+                        <h3>Java Programming</h3>
+                        <p>It is High-Level, class-based , Object-oriented programming language. Good understanding of OOP and Class concepts.</p>
+                        <a href="#" class="btn">70%</a>
+                    </div>
+                    <div class="services-box">
+                        <i class="fa fa-user-secret"></i>
+                        <h3>pen Testing</h3>
+                        <p>It is a cybersecurity attempt to find and exploit vulnerabilities in computer system.Good understanding of types of Pre-attack, Attack & Post-attack phases.</p>
+                        <a href="#" class="btn">80%</a>
+                    </div>
+        
+                    <div class="services-box">
+                        <i class="fa-solid fa-bug-slash"></i>
+                        <h3>Identify Bug</h3>
+                        <p>Good understanding of types of Bugs in</p>
+                        <a href="#" class="btn">65%</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <section class="Portfolio" id="Portfolio">
+        <h2 class="headinng">My <span>Project</span></h2>
+
+        <div class="Portfolio-container">
+            <!-- First Row of Service Boxes -->
+            <div class="Portfolio-row">
+                <div class="Portfolio-box">
+                    <img src="src/assets/wiresh.png" alt="">
+                    <div class="Portfolio-layer">
+                    <h4><span style="color: #02f0cc;">Wireshark pentesting </span> </h4>
+                    <p></p>
+                    
+                    <a href="https://github.com/YRHat/Wiresharktool.git" target="_blank">
+                        <i class="fa-brands fa-github"></i> <!-- Font Awesome GitHub icon -->
+                    </a>
+                    </div>
+                    </div>
+    
+                <div class="Portfolio-box">
+                    <img src="src/assets/tcpdump-logo.jpg" alt="">
+                    <div class="Portfolio-layer">
+                        <h4><span style="color: #02f0cc;"> Tcpdump pentesting</span> </h4>
+                        <p></p>
+                        
+                        <a href="https://github.com/YRHat/Tcpdumptool.git" target="_blank">
+                            <i class="fa-brands fa-github"></i> <!-- Font Awesome GitHub icon -->
+                        </a>
+                        </div>
+                        </div>
+
+                <div class="Portfolio-box">
+                            <img src="src/assets/cloud.jpg" alt="">
+                            <div class="Portfolio-layer">
+                                <h4><span style="color: #02f0cc;"> Cloud Instance Launch</span> </h4>
+                                <p></p>
+                                
+                                <a href="" target="_blank">
+                                    <i class="fa-brands fa-github"></i> <!-- Font Awesome GitHub icon -->
+                                </a>
+                                </div>
+                                </div>
+
+                        
+             </div>
+<!-- Second Row of achiv Boxes -->
+<div class="Portfolio-row"> 
+
+<div class="Portfolio-row">
+    <div class="Portfolio-box">
+        <img src="src/assets/images.jpeg" alt="">
+        <div class="Portfolio-layer">
+        <h4><span style="color: #02f0cc;">Python project </span> </h4>
+        <p></p>
+        
+        <a href="" target="_blank">
+            <i class="fa-brands fa-github"></i> <!-- Font Awesome GitHub icon -->
+        </a>
+        </div>
+        </div>
+
+        <div class="Portfolio-box">
+            <img src="src/assets/java.jpg" alt="">
+            <div class="Portfolio-layer">
+            <h4><span style="color: #02f0cc;">Java Project </span> </h4>
+            <p></p>
+            
+            <a href="" target="_blank">
+                <i class="fa-brands fa-github"></i> <!-- Font Awesome GitHub icon -->
+            </a>
+            </div>
+            </div>
+
+        <div class="Portfolio-box">
+                <img src="src/assets/kali  li.jpg" alt="">
+                <div class="Portfolio-layer">
+                <h4><span style="color: #02f0cc;">Kali Linux Terminal CLI</span> </h4>
+                <p></p>
+                
+                <a href="" target="_blank">
+                    <i class="fa-brands fa-github"></i> <!-- Font Awesome GitHub icon -->
+                </a>
+                </div>
+                </div>
+    </div>
+
+
+                
+                        
+                                     
+    
+
+    
+    </section>
+
+
+
+    
+
+
+
+                      
+ <section class="Achievements" id="Achievements">
+            <h2 class="headinng">My <span>Achievements</span></h2>
+
+            <div class="Achievements-container">
+                <!-- First Row of Service Boxes -->
+                <div class="Achievements-row">
+                    <div class="Achievements-box">
+                        <img src="src/assets/Azure AI Fundamentals.jpg" alt="">
+                        <div class="Achievements-layer">
+                        <h4><span style="color: #f35b47;">Azure AI-900 </span> </h4>
+                        <p></p>
+                        
+                        <a href="" target="_blank">
+                            <i class="fa-solid fa-download"></i> <!-- Font Awesome GitHub icon -->
+                        </a>
+                        </div>
+                        </div>
+        
+                    <div class="Achievements-box">
+                        <img src="src/assets/25 & 26 march.jpg" alt="">
+                        <div class="Achievements-layer">
+                            <h4><span style="color: #f35b47;"> IITB-Placement Talks</span> </h4>
+                            <p></p>
+                            
+                            <a href="" target="_blank">
+                                <i class="fa-solid fa-download"></i> <!-- Font Awesome GitHub icon -->
+                            </a>
+                            </div>
+                            </div>
+
+                            
+                 </div>
+ <!-- Second Row of achiv Boxes -->
+<div class="Achievements-row"> 
+
+    <div class="Achievements-row">
+        <div class="Achievements-box">
+            <img src="src/assets/p2.jpg" alt="">
+            <div class="Achievements-layer">
+            <h4><span style="color: #f35b47;">Security Risks </span> </h4>
+            <p></p>
+            
+            <a href="" target="_blank">
+                <i class="fa-solid fa-download"></i> <!-- Font Awesome GitHub icon -->
+            </a>
+            </div>
+            </div>
+    
+            <div class="Achievements-box">
+                <img src="src/assets/p1.jpg" alt="">
+                <div class="Achievements-layer">
+                <h4><span style="color: #f35b47;">Fundamental of CS </span> </h4>
+                <p></p>
+                
+                <a href="" target="_blank">
+                    <i class="fa-solid fa-download"></i> <!-- Font Awesome GitHub icon -->
+                </a>
+                </div>
+                </div>
+        </div>
+
+   
+                    
+                            
+                                         
+        
+
+        
+        </section>
+
+
+
+        <div id="contact">
+            <h1 class="sub-title">Contact <span style="color: #59B2F4;">Me</span></h1>
+
+            <div class="container">
+            <div class="row">
+            <div class="contact-left">
+            
+            <p><i class="fas fa-paper-plane"></i><span style="font-size: 15px;">yashodip1302@gmail.com</span> </p>
+            <p><i class="fas fa-phone-square-alt"></i> <span style="font-size: 15px;">+91 8767247164</span></p>
+            <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=61559006074999&mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a>
+            <a href="https://github.com/YRHat/Tcpdumptool.git"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/yashodip_755?igsh=MWg5dHcyZWNvYWp5cg=="><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/yashodip0755"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <a href="src/assets/yashodipresume.pdf" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                
+                <form action="" name="contact" id="contactForm" data-netlify="true"> <!-- Added id="contactForm" to the form -->
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn3">Submit</button>
+                    <div id="successMessage" class="hidden">Message has been sent successfully!</div> <!-- Added success message box -->
+                </form>
+                
+                <div id="successMessage" class="hidden"><span style="color: aliceblue;">Your Message has been sent successfully!</span></div>
+            </div>
+                
+            </div>
+            
+            </div>
+            </div>
+
+           
+            
+            
+      
+
+    </section>
+
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the form from submitting normally
+    
+            // You can perform form validation here if needed
+    
+            // Display success message
+            document.getElementById("successMessage").classList.remove("hidden");
+
+             // Clear input fields
+    document.getElementById("contactForm").reset();
+            
+    
+            // Hide success message after 3 seconds
+            setTimeout(function() {
+                document.getElementById("successMessage").classList.add("hidden");
+            }, 5000);
+        });
+    </script>
+
+    
+
+    <footer class="footer">
+        <div class="footer-text">
+        <p>Copyright &copy; 2024 by @Yashodip  | All Rights Reserved .</p>
+        </div>
+        
+        <div class="footer-iconTop">
+        <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+        </div>
+        </footer>
+
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+<script src="main.js"></script>
+</body>
+</html>
